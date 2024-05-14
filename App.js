@@ -1,20 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';  
+import { tailwind, color } from 'react-native-tailwindcss';a
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+   return (
+    <View style={[tailwind.flex1, tailwind.alignCenter, tailwind.justifyCenter, tailwind.bgWhite, tailwind.itemsCenter]}>
+      <Text style = {[tailwind.textRed900]}>Open </Text>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+ 
+
+ 
